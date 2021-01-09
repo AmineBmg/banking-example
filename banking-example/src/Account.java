@@ -28,6 +28,7 @@ public   class  Account {
 
 	public void display() {
 		System.out.println("Account: "+ID+ " Balance ="+balance);
+		System.out.println("CURRENCY ="+CURRENCY);
 	}
 
 
@@ -52,6 +53,15 @@ public   class  Account {
 	public boolean isSufficient(double amount) {
 		return balance>=amount;
 	}
+
+	//add currency feature
+	int CURRENCY;
+
+	 
+	 public int getCurrency() {
+		 
+		 return CURRENCY;
+	 }
 
 
 }
