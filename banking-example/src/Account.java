@@ -5,7 +5,7 @@ public   class  Account {
 
 	public  String ID;
 
-	final static int DAILY_LIMIT = -1000;
+	final static int limitOnAccount = -1000;
 
 	private double balance;
 
@@ -28,7 +28,7 @@ public   class  Account {
 
 	public void display() {
 		System.out.println("Account: "+ID+ " Balance ="+balance);
-		System.out.println("LIMIT ="+ DAILY_LIMIT);
+		System.out.println("LIMIT ="+ limitOnAccount);
 		System.out.println("CURRENCY ="+currencyExchange);
 	}
 
@@ -52,7 +52,8 @@ public   class  Account {
 
 
 	public boolean isSufficient(double amount) {
-		return balance>=amount +DAILY_LIMIT;
+		
+		return balance>=amount +limitOnAccount;
 	}
 		
 
