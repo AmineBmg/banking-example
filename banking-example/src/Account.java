@@ -40,11 +40,17 @@ public   class  Account {
 
 	public boolean withdraw(double amount) {
 
-		if (balance>=amount ) {
+		if (isSufficient(amount) ) {
 			balance-=amount;
 			return true;
 		}
 		return false;
+	}
+
+
+
+	public boolean isSufficient(double amount) {
+		return balance>=amount;
 	}
 
 
