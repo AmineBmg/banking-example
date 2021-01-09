@@ -28,7 +28,7 @@ public   class  Account {
 
 	public void display() {
 		System.out.println("Account: "+ID+ " Balance ="+balance);
-		System.out.println("CURRENCY ="+CURRENCY);
+		System.out.println("CURRENCY ="+currencyExchange);
 	}
 
 
@@ -55,12 +55,12 @@ public   class  Account {
 	}
 
 	//add currency feature
-	int CURRENCY;
+	int currencyExchange;
 
 	 
 	 public int getCurrency() {
 		 
-		 return CURRENCY;
+		 return currencyExchange;
 	 }
 
 
